@@ -77,6 +77,12 @@ report 50072 GatePassReport
             column(PostingDate; Format("Posting Date"))
             {
             }
+             column(DriverName; "Driver Name")
+            {
+            }
+            column(VehicleNo; "Vehicle No")
+            {
+            }
             dataitem("Transfer Line"; "Transfer Line")
             {
                 DataItemLink = "Document No." = field("No.");
@@ -103,13 +109,7 @@ report 50072 GatePassReport
                 column(UOM; "Unit of Measure Code")
                 {
                 }
-                column(DriverName; '')
-                {
-                }
                 column(TakenBy; '')
-                {
-                }
-                column(VehicleNo; '')
                 {
                 }
                 column(NIRC; '')
