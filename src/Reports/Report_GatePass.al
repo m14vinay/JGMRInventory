@@ -44,7 +44,7 @@ report 50072 GatePassReport
             column(CompanyInfoHomePage; CompanyInfo."Home Page")
             {
             }
-            column(CompanyInfoVATRegNo; CompanyInfo."VAT Registration No.")
+            column(CompanyInfoVATRegNo; CompanyInfo."ADY E-INV SST Reg No.")
             {
             }
             column(CompanyInfoBusinessRegistrationNo; CompanyInfo."Registration No.")
@@ -77,7 +77,7 @@ report 50072 GatePassReport
             column(PostingDate; Format("Posting Date"))
             {
             }
-             column(DriverName; "Driver Name")
+            column(DriverName; "Driver Name")
             {
             }
             column(VehicleNo; "Vehicle No")
