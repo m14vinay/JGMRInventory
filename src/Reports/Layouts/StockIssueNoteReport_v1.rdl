@@ -11,7 +11,7 @@
       <am:Name>MSRB</am:Name>
       <am:Version>15.1.30001.02</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2025-09-24T04:38:19.2382876Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2025-09-26T04:01:06.0892961Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -1388,7 +1388,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=First(Fields!PrintName.Value, "DataSet_Result")</Value>
+                      <Value>=First(Fields!PrintName.Value, "DataSet_Result")+"  "+"(" +First(Fields!CompanyInfoBusinessRegistrationNo.Value, "DataSet_Result") +")"</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Cambria</FontFamily>
@@ -1805,38 +1805,6 @@
                 <VerticalAlign>Middle</VerticalAlign>
               </Style>
             </Textbox>
-            <Textbox Name="lbltelno2">
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>="(" +First(Fields!CompanyInfoBusinessRegistrationNo.Value, "DataSet_Result") +")"</Value>
-                      <Style>
-                        <FontStyle>Normal</FontStyle>
-                        <FontFamily>Cambria</FontFamily>
-                        <FontSize>11pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Left</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <Top>0.26903cm</Top>
-              <Left>7.17327cm</Left>
-              <Height>28.49987pt</Height>
-              <Width>4.24403cm</Width>
-              <ZIndex>16</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <VerticalAlign>Middle</VerticalAlign>
-              </Style>
-            </Textbox>
             <Image Name="Picture1">
               <Source>Database</Source>
               <Value>=First(Fields!CompanyPicture1.Value, "DataSet_Result")</Value>
@@ -1845,7 +1813,7 @@
               <Left>11.62119cm</Left>
               <Height>1.77679cm</Height>
               <Width>2.04352cm</Width>
-              <ZIndex>17</ZIndex>
+              <ZIndex>16</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -1860,7 +1828,7 @@
               <Left>13.66472cm</Left>
               <Height>1.77679cm</Height>
               <Width>2.22356cm</Width>
-              <ZIndex>18</ZIndex>
+              <ZIndex>17</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -1875,7 +1843,7 @@
               <Left>15.88829cm</Left>
               <Height>1.77679cm</Height>
               <Width>2.02102cm</Width>
-              <ZIndex>19</ZIndex>
+              <ZIndex>18</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -1891,7 +1859,7 @@
               <Left>0.35961cm</Left>
               <Height>1.0054cm</Height>
               <Width>1.2662cm</Width>
-              <ZIndex>20</ZIndex>
+              <ZIndex>19</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
