@@ -1,1 +1,1 @@
-﻿{"Added":[],"Modified":[],"Removed":[]}
+﻿{"Added":[],"Modified":[{"Id":50075,"Kind":16,"Name":"ReleasedProductionOrder","Namespace":""},{"Id":50074,"Kind":16,"Name":"Posted Transfer Recpt Ext","Namespace":""},{"Id":50075,"Kind":13,"Name":"RecordingSlipReport","Namespace":""}],"Removed":[{"Id":50072,"Kind":16,"Name":"TransferOrder","Namespace":""},{"Id":50072,"Kind":13,"Name":"GatePassReport","Namespace":""}]}
