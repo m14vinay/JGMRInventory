@@ -71,7 +71,7 @@ report 50075 RecordingSlipReport
             column(CompanyPicture3; CompanyInfo."Company Logo 3")
             {
             }
-            column(Last_Date_Modified; "Last Date Modified") { }
+            column(Last_Date_Modified; Format("Last Date Modified")) { }
             column(Job_Code; '') { }
             column(Description; Description) { }
             column(Finish; Finish) { }
@@ -82,7 +82,7 @@ report 50075 RecordingSlipReport
             column(QtyofPiecePerPack; QtyofPiecePerPack) { }
             column(QtyofCarton_TraysPerPallet; QtyofCarton_TraysPerPallet) { }
             column(QtyPerPack; QtyPerPack) { }
-
+            column(SlipNo; '') { }
             trigger OnPreDataItem()
             var
                 CountryRegion: Record "Country/Region";
@@ -101,6 +101,13 @@ report 50075 RecordingSlipReport
             end;
         }
     }
+    trigger OnInitReport()
+    begin
+        CompanyInfo.SetAutoCalcFields(Picture);
+        CompanyInfo.SetAutoCalcFields("Company Logo 1");
+        CompanyInfo.SetAutoCalcFields("Company Logo 2");
+        CompanyInfo.SetAutoCalcFields("Company Logo 3");
+    end;
 
     var
         QtyPerPack: Text;
