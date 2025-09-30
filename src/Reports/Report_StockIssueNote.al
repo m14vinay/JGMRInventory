@@ -80,6 +80,9 @@ report 50073 StockIssueNote
             column(StockTRfNo; "Transfer Order No.")
             {
             }
+            column(No; "No.")
+            {
+            }
             column(StockTrfDate; Format("Posting Date"))
             {
             }
