@@ -87,6 +87,7 @@ report 50072 GatePassReport
             {
                 DataItemLink = "Document No." = field("No.");
                 DataItemLinkReference = "Transfer Header";
+                DataItemTableView = sorting("Document No.", "Line No.") where("Quantity Shipped" = const(0), "Quantity Received" = const(0));
 
                 column(ItemNo; "Item No.")
                 {

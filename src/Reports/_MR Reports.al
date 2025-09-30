@@ -4,7 +4,7 @@ report 50071 "Material Requisition Report"
     ApplicationArea = All;
     Caption = 'Material Requisition Report';
     DefaultLayout = RDLC;
-    RDLCLayout = 'src/Reports/Layouts/MaterialRequisitionReport.rdlc'; // update path if needed
+    RDLCLayout = 'src/Reports/Layouts/MaterialRequisitionReport.rdl'; // update path if needed
     dataset
     {
         dataitem(MRHeader; "MR Header")
