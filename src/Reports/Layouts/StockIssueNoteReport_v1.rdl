@@ -11,7 +11,7 @@
       <am:Name>MSRB</am:Name>
       <am:Version>15.1.30001.02</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2025-09-30T05:16:02.9388111Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2025-10-02T05:32:19.2588047Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -1195,7 +1195,7 @@
                     <Paragraph>
                       <TextRuns>
                         <TextRun>
-                          <Value>=First(Fields!No.Value, "DataSet_Result")</Value>
+                          <Value>=First(Fields!StockTRfNo.Value, "DataSet_Result")</Value>
                           <Style>
                             <FontStyle>Normal</FontStyle>
                             <FontFamily>Cambria</FontFamily>
@@ -1207,7 +1207,7 @@
                       </Style>
                     </Paragraph>
                   </Paragraphs>
-                  <Top>0.14463cm</Top>
+                  <Top>0.77963cm</Top>
                   <Left>4.28567cm</Left>
                   <Height>14.5pt</Height>
                   <Width>4.71843cm</Width>
@@ -1237,7 +1237,7 @@
                       </Style>
                     </Paragraph>
                   </Paragraphs>
-                  <Top>0.67674cm</Top>
+                  <Top>1.31174cm</Top>
                   <Left>4.29221cm</Left>
                   <Height>14.91669pt</Height>
                   <Width>4.71843cm</Width>
@@ -1268,7 +1268,7 @@
                       </Style>
                     </Paragraph>
                   </Paragraphs>
-                  <Top>0.14463cm</Top>
+                  <Top>0.77963cm</Top>
                   <Height>14.08331pt</Height>
                   <Width>3.93943cm</Width>
                   <ZIndex>2</ZIndex>
@@ -1298,7 +1298,7 @@
                       </Style>
                     </Paragraph>
                   </Paragraphs>
-                  <Top>0.67674cm</Top>
+                  <Top>1.31174cm</Top>
                   <Height>14.5pt</Height>
                   <Width>3.93943cm</Width>
                   <ZIndex>3</ZIndex>
@@ -1327,7 +1327,7 @@
                       </Style>
                     </Paragraph>
                   </Paragraphs>
-                  <Top>0.14463cm</Top>
+                  <Top>0.77963cm</Top>
                   <Left>3.93943cm</Left>
                   <Height>15.08331pt</Height>
                   <Width>0.31096cm</Width>
@@ -1357,7 +1357,7 @@
                       </Style>
                     </Paragraph>
                   </Paragraphs>
-                  <Top>0.67674cm</Top>
+                  <Top>1.31174cm</Top>
                   <Left>3.93943cm</Left>
                   <Height>14.5pt</Height>
                   <Width>0.31096cm</Width>
@@ -1369,11 +1369,101 @@
                     <VerticalAlign>Middle</VerticalAlign>
                   </Style>
                 </Textbox>
+                <Textbox Name="ExecutionTimeTextBox25">
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>=First(Fields!No.Value, "DataSet_Result")</Value>
+                          <Style>
+                            <FontStyle>Normal</FontStyle>
+                            <FontFamily>Cambria</FontFamily>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                  </Paragraphs>
+                  <Top>0.2249cm</Top>
+                  <Left>4.32095cm</Left>
+                  <Height>15.14138pt</Height>
+                  <Width>4.68969cm</Width>
+                  <ZIndex>6</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                    <VerticalAlign>Middle</VerticalAlign>
+                  </Style>
+                </Textbox>
+                <Textbox Name="ExecutionTimeTextBox36">
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Stock Trf No.</Value>
+                          <Style>
+                            <FontStyle>Normal</FontStyle>
+                            <FontFamily>Cambria</FontFamily>
+                            <FontWeight>Bold</FontWeight>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                  </Paragraphs>
+                  <Top>0.2249cm</Top>
+                  <Height>14.72469pt</Height>
+                  <Width>3.93943cm</Width>
+                  <ZIndex>7</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                    <VerticalAlign>Middle</VerticalAlign>
+                  </Style>
+                </Textbox>
+                <Textbox Name="ExecutionTimeTextBox43">
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>:</Value>
+                          <Style>
+                            <FontStyle>Normal</FontStyle>
+                            <FontFamily>Cambria</FontFamily>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                      </Style>
+                    </Paragraph>
+                  </Paragraphs>
+                  <Top>0.2249cm</Top>
+                  <Left>3.97471cm</Left>
+                  <Height>15.72469pt</Height>
+                  <Width>0.31096cm</Width>
+                  <ZIndex>8</ZIndex>
+                  <Style>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                    <VerticalAlign>Middle</VerticalAlign>
+                  </Style>
+                </Textbox>
               </ReportItems>
               <KeepTogether>true</KeepTogether>
               <Top>5.6507cm</Top>
               <Left>0.35961cm</Left>
-              <Height>1.57632cm</Height>
+              <Height>1.84736cm</Height>
               <Width>17.49912cm</Width>
               <ZIndex>1</ZIndex>
               <Style>
@@ -1856,9 +1946,9 @@
               <MIMEType>image/jpeg</MIMEType>
               <Sizing>Fit</Sizing>
               <Top>0.26903cm</Top>
-              <Left>0.35961cm</Left>
+              <Left>0.34765cm</Left>
               <Height>1.0054cm</Height>
-              <Width>1.2662cm</Width>
+              <Width>1.27816cm</Width>
               <ZIndex>19</ZIndex>
               <Style>
                 <Border>
