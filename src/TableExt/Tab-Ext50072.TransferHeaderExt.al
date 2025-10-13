@@ -10,5 +10,9 @@ tableextension 50072 "Transfer Header Ext" extends "Transfer Header"
         {
             Caption = 'Driver Name';
         }
+        modify("Partner VAT ID")
+        {
+            Caption = 'Partner SST ID';
+        }
     }
 }

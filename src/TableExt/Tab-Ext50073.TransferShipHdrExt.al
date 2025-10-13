@@ -10,5 +10,9 @@ tableextension 50073 "Transfer Ship Hdr Ext" extends "Transfer Shipment Header"
         {
             Caption = 'Driver Name';
         }
+        modify("Partner VAT ID")
+        {
+            Caption = 'Partner SST ID';
+        }
     }
 }
