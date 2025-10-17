@@ -24,11 +24,24 @@ codeunit 50071 "MR Subscriber"
     end;
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"TransferOrder-Post Shipment", 'OnRunOnBeforeCommit', '', false, false)]
     local procedure UpdateVehicleNo(var TransferHeader: Record "Transfer Header"; var TransferShipmentHeader: Record "Transfer Shipment Header"; PostedWhseShptHeader: Record "Posted Whse. Shipment Header"; var SuppressCommit: Boolean)
-  
+    var
+    TransferLine : Record "Transfer Line";
+    TransferShipmentLine : Record "Transfer Shipment Line";
     begin
       TransferShipmentHeader.Supplier := TransferHeader.Supplier;
       TransferShipmentHeader."Vehicle No" := TransferHeader."Vehicle No";
       TransferShipmentHeader."Driver Name" := TransferHeader."Driver Name";
       TransferShipmentHeader.Modify();
+      TransferLine.Reset();
+      TransferLine.SetRange("Document No.",TransferHeader."No.");
+      TransferLine.SetRange(Returnable,true);
+      If TransferLine.FindSet() then repeat
+         TransferShipmentLine.Reset();
+         TransferShipmentLine.SetRange("Line No.",TransferLine."Line No.");
+         If TransferShipmentLine.FindFirst() then begin
+            TransferShipmentLine.Returnable := TransferLine.Returnable;
+            TransferShipmentLine.Modify(false);
+         end;
+      until TransferLine.Next() = 0;
     end;
 }
