@@ -50,16 +50,16 @@
                                     <Width>0.97452cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>1.55539cm</Width>
+                                    <Width>1.88959cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>2.00447cm</Width>
+                                    <Width>1.83295cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
                                     <Width>1.04723cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>1.30786cm</Width>
+                                    <Width>1.13639cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
                                     <Width>4.35165cm</Width>
@@ -1320,7 +1320,7 @@
                               <Top>0.18099cm</Top>
                               <Left>0.35648cm</Left>
                               <Height>2.07597cm</Height>
-                              <Width>17.73574cm</Width>
+                              <Width>17.72695cm</Width>
                               <Style>
                                 <Border>
                                   <Style>Solid</Style>
@@ -1374,14 +1374,13 @@
             <PageBreak>
               <BreakLocation>End</BreakLocation>
             </PageBreak>
-            <Top>0.3175cm</Top>
             <Left>0.00001cm</Left>
             <Height>2.50391cm</Height>
             <Width>18.44876cm</Width>
             <Style />
           </Tablix>
         </ReportItems>
-        <Height>3.13891cm</Height>
+        <Height>2.50391cm</Height>
         <Style />
       </Body>
       <Width>18.44877cm</Width>
