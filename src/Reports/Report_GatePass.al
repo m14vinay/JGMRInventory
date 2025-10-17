@@ -1,7 +1,8 @@
 report 50072 GatePassReport
 {
     DefaultLayout = RDLC;
-    RDLCLayout = './src/Reports/Layouts/GatePassReport_v1.rdl';
+    //RDLCLayout = './src/Reports/Layouts/GatePassReport_v1.rdl';
+    RDLCLayout = './src/Reports/Layouts/GatePassReport_v2.rdl';
     Caption = 'Gate Pass';
     ApplicationArea = Suite;
     UsageCategory = Documents;
@@ -138,6 +139,13 @@ report 50072 GatePassReport
             end;
         }
     }
+    trigger OnInitReport()
+    begin
+        CompanyInfo.SetAutoCalcFields(Picture);
+        CompanyInfo.SetAutoCalcFields("Company Logo 1");
+        CompanyInfo.SetAutoCalcFields("Company Logo 2");
+        CompanyInfo.SetAutoCalcFields("Company Logo 3");
+    end;
 
     var
         CompanyCounty: Text;
