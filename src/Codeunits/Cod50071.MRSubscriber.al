@@ -26,6 +26,7 @@ codeunit 50071 "MR Subscriber"
     local procedure UpdateVehicleNo(var TransferHeader: Record "Transfer Header"; var TransferShipmentHeader: Record "Transfer Shipment Header"; PostedWhseShptHeader: Record "Posted Whse. Shipment Header"; var SuppressCommit: Boolean)
   
     begin
+      TransferShipmentHeader.Supplier := TransferHeader.Supplier;
       TransferShipmentHeader."Vehicle No" := TransferHeader."Vehicle No";
       TransferShipmentHeader."Driver Name" := TransferHeader."Driver Name";
       TransferShipmentHeader.Modify();

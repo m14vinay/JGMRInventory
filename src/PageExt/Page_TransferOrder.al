@@ -12,6 +12,11 @@ pageextension 50072 TransferOrder extends "Transfer Order"
             {
                 ApplicationArea = All;
             }
+              field(Supplier; Rec.Supplier)
+            {
+                ToolTip = 'Specifies Supplier';
+                ApplicationArea = All;
+            }
         }
     }
     actions

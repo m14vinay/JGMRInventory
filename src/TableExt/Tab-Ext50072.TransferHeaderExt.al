@@ -10,6 +10,11 @@ tableextension 50072 "Transfer Header Ext" extends "Transfer Header"
         {
             Caption = 'Driver Name';
         }
+         field(50073; "Supplier"; Text[50])
+        {
+            Caption = 'Supplier';
+            DataClassification = CustomerContent;
+        }
         modify("Partner VAT ID")
         {
             Caption = 'Partner SST ID';

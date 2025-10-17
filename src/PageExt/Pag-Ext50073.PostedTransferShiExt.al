@@ -13,6 +13,11 @@ pageextension 50073 "Posted Transfer Shi Ext" extends "Posted Transfer Shipment"
                 ApplicationArea = All;
                 Editable = false;
             }
+              field(Supplier; Rec.Supplier)
+            {
+                ToolTip = 'Specifies Supplier';
+                ApplicationArea = All;
+            }
         }
     }
 }
