@@ -1,4 +1,4 @@
-pageextension 50075 "Transfer Subform Ext" extends "Transfer Order Subform"
+pageextension 50077 "Transfer Receipt Line" extends "Posted Transfer Rcpt. Subform"
 {
     layout
     {
@@ -7,11 +7,6 @@ pageextension 50075 "Transfer Subform Ext" extends "Transfer Order Subform"
             field("Quantity Pieces"; Rec."Quantity Pieces")
             {
                 ToolTip = 'Specifies the Quantity Pieces';
-                ApplicationArea = All;
-            }
-            field(Returnable; Rec.Returnable)
-            {
-                ToolTip = 'Specifies Returnable';
                 ApplicationArea = All;
             }
         }
