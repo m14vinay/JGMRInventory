@@ -1,9 +1,9 @@
-report 50072 GatePassReport
+report 50075 GatePassReportv2
 {
     DefaultLayout = RDLC;
     //RDLCLayout = './src/Reports/Layouts/GatePassReport_v1.rdl';
-    RDLCLayout = './src/Reports/Layouts/GatePassReport_v2.rdl';
-    Caption = 'Gate Pass';
+    RDLCLayout = './src/Reports/Layouts/GatePassReportReturn.rdl';
+    Caption = 'Gate Pass (Return)';
     ApplicationArea = Suite;
     UsageCategory = Documents;
     WordMergeDataItem = "Transfer Header";
@@ -82,9 +82,6 @@ report 50072 GatePassReport
             {
             }
             column(VehicleNo; "Vehicle No")
-            {
-            }
-            column(Supplier; Supplier)
             {
             }
             dataitem("Transfer Line"; "Transfer Line")
