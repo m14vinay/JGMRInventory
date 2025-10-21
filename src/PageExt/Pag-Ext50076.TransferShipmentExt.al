@@ -1,4 +1,4 @@
-pageextension 50076 "Transfer Shipment Ext" extends "Posted Transfer Shipment Lines"
+pageextension 50076 "Transfer Shipment Ext" extends "Posted Transfer Shpt. Subform"
 {
     layout{
         addafter(Quantity)

@@ -2707,6 +2707,9 @@ ohhNZOMp2UrqoTkcOfwTbdukMGnSBG697Q7sNttxtvIJHQ+333oTz/Xsdn5Z1OWU8zeZMWsOb703jJ5P
         <Field Name="VehicleNo">
           <DataField>VehicleNo</DataField>
         </Field>
+        <Field Name="Supplier">
+          <DataField>Supplier</DataField>
+        </Field>
         <Field Name="ItemNo">
           <DataField>ItemNo</DataField>
         </Field>
