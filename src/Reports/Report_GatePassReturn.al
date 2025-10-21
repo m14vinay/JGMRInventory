@@ -6,11 +6,11 @@ report 50075 GatePassReportv2
     Caption = 'Gate Pass (Return)';
     ApplicationArea = Suite;
     UsageCategory = Documents;
-    WordMergeDataItem = "Transfer Header";
+    WordMergeDataItem = "Return Shipment Header";
 
     dataset
     {
-        dataitem("Transfer Header"; "Transfer Header")
+        dataitem("Return Shipment Header"; "Return Shipment Header")
         {
             column(PrintName; CompanyInfo."Print Name")
             {
@@ -78,34 +78,34 @@ report 50075 GatePassReportv2
             column(PostingDate; Format("Posting Date"))
             {
             }
-            column(DriverName; "Driver Name")
+            column(DriverName; Transporter)
             {
             }
-            column(VehicleNo; "Vehicle No")
+            column(VehicleNo; "Vehicle No.")
             {
             }
-            dataitem("Transfer Line"; "Transfer Line")
+            column(Buy_from_Vendor_Name; "Buy-from Vendor Name")
+            {
+            }
+            dataitem("Return Shipment Line"; "Return Shipment Line")
             {
                 DataItemLink = "Document No." = field("No.");
-                DataItemLinkReference = "Transfer Header";
-                DataItemTableView = sorting("Document No.", "Line No.") where("Quantity Shipped" = const(0), "Quantity Received" = const(0));
+                DataItemLinkReference = "Return Shipment Header";
+                DataItemTableView = sorting("Line No.");
 
-                column(ItemNo; "Item No.")
+                column(ItemCode; "No.")
                 {
                 }
-                column(Date; Format("Shipment Date"))
+                column(Returnable; Returnable)
                 {
                 }
-                column(Issue; '')
+                column(Posting_Date; "Posting Date")
                 {
                 }
-                column(Status; '')
+                column(Description; Description)
                 {
                 }
-                column(Description; "Description")
-                {
-                }
-                column(Quantity; "Quantity")
+                column(Quantity; Quantity)
                 {
                 }
                 column(UOM; "Unit of Measure Code")
@@ -114,13 +114,12 @@ report 50075 GatePassReportv2
                 column(TakenBy; '')
                 {
                 }
-                column(NIRC; '')
-                {
-                }
                 column(Remarks; '')
                 {
                 }
+
             }
+
             trigger OnPreDataItem()
             var
                 CountryRegion: Record "Country/Region";

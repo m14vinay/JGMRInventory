@@ -11,7 +11,7 @@
       <am:Name>MSRB</am:Name>
       <am:Version>15.1.30001.02</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2025-10-17T09:53:06.4770939Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2025-10-21T03:25:16.7953783Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -628,7 +628,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value>Description</Value>
                                                     <Style>
                                                       <FontFamily>Cambria</FontFamily>
                                                       <FontWeight>Bold</FontWeight>
@@ -909,15 +909,15 @@
                                       </TablixCell>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="ItemNo1">
-                                            <rd:DefaultName>ItemNo1</rd:DefaultName>
+                                          <Textbox Name="ItemCode">
+                                            <rd:DefaultName>ItemCode</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!ItemNo.Value</Value>
+                                                    <Value>=Fields!ItemCode.Value</Value>
                                                     <Style>
                                                       <FontFamily>Cambria</FontFamily>
                                                     </Style>
@@ -963,15 +963,15 @@
                                       </TablixCell>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="Date">
-                                            <rd:DefaultName>Date</rd:DefaultName>
+                                          <Textbox Name="Posting_Date">
+                                            <rd:DefaultName>Posting_Date</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!Date.Value</Value>
+                                                    <Value>=FormatDateTime(Fields!Posting_Date.Value, DateFormat.ShortDate)</Value>
                                                     <Style>
                                                       <FontFamily>Cambria</FontFamily>
                                                     </Style>
@@ -1017,15 +1017,15 @@
                                       </TablixCell>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="Textbox97">
-                                            <rd:DefaultName>Textbox97</rd:DefaultName>
+                                          <Textbox Name="Returnable">
+                                            <rd:DefaultName>Returnable</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value>=IIF(Fields!Returnable.Value, "Yes", "No")</Value>
                                                     <Style>
                                                       <FontFamily>Cambria</FontFamily>
                                                     </Style>
@@ -1127,8 +1127,8 @@
                                       </TablixCell>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="Quantity1">
-                                            <rd:DefaultName>Quantity1</rd:DefaultName>
+                                          <Textbox Name="Quantity">
+                                            <rd:DefaultName>Quantity</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
@@ -1143,7 +1143,7 @@
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
-                                                  <TextAlign>Left</TextAlign>
+                                                  <TextAlign>Center</TextAlign>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
@@ -1311,7 +1311,7 @@
                                   <TablixMember>
                                     <Group Name="Details" />
                                     <Visibility>
-                                      <Hidden>=if(Fields!ItemNo.Value="",True,False)</Hidden>
+                                      <Hidden>=if(Fields!ItemCode.Value="",True,False)</Hidden>
                                     </Visibility>
                                   </TablixMember>
                                 </TablixMembers>
@@ -2091,7 +2091,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Fields!DriverName.Value</Value>
+                      <Value>=First(Fields!DriverName.Value, "DataSet_Result")</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Cambria</FontFamily>
@@ -2362,7 +2362,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Fields!Supplier.Value</Value>
+                      <Value>=First(Fields!Buy_from_Vendor_Name.Value, "DataSet_Result")</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Cambria</FontFamily>
@@ -2707,17 +2707,17 @@ ohhNZOMp2UrqoTkcOfwTbdukMGnSBG697Q7sNttxtvIJHQ+333oTz/Xsdn5Z1OWU8zeZMWsOb703jJ5P
         <Field Name="VehicleNo">
           <DataField>VehicleNo</DataField>
         </Field>
-        <Field Name="ItemNo">
-          <DataField>ItemNo</DataField>
+        <Field Name="Buy_from_Vendor_Name">
+          <DataField>Buy_from_Vendor_Name</DataField>
         </Field>
-        <Field Name="Date">
-          <DataField>Date</DataField>
+        <Field Name="ItemCode">
+          <DataField>ItemCode</DataField>
         </Field>
-        <Field Name="Issue">
-          <DataField>Issue</DataField>
+        <Field Name="Returnable">
+          <DataField>Returnable</DataField>
         </Field>
-        <Field Name="Status">
-          <DataField>Status</DataField>
+        <Field Name="Posting_Date">
+          <DataField>Posting_Date</DataField>
         </Field>
         <Field Name="Description">
           <DataField>Description</DataField>
@@ -2733,9 +2733,6 @@ ohhNZOMp2UrqoTkcOfwTbdukMGnSBG697Q7sNttxtvIJHQ+333oTz/Xsdn5Z1OWU8zeZMWsOb703jJ5P
         </Field>
         <Field Name="TakenBy">
           <DataField>TakenBy</DataField>
-        </Field>
-        <Field Name="NIRC">
-          <DataField>NIRC</DataField>
         </Field>
         <Field Name="Remarks">
           <DataField>Remarks</DataField>

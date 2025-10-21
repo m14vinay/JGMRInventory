@@ -123,6 +123,9 @@ report 50072 GatePassReport
                 column(Remarks; '')
                 {
                 }
+                column(Returnable; Returnable)
+                {
+                }
             }
             trigger OnPreDataItem()
             var
