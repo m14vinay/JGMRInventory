@@ -1,7 +1,7 @@
 page 50072 "MR Header List"
 {
     ApplicationArea = All;
-    Caption = 'MR Header List';
+    Caption = 'Material Requisition List';
     PageType = List;
     SourceTable = "MR Header";
     UsageCategory = Lists;

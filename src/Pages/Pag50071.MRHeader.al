@@ -1,7 +1,7 @@
 page 50071 "MR Header"
 {
     ApplicationArea = All;
-    Caption = 'MR Header';
+    Caption = 'Material Requisition';
     PageType = Document;
     SourceTable = "MR Header";
     PromotedActionCategoriesML = ENU = 'Home,Process,Report,,Request Approve';
