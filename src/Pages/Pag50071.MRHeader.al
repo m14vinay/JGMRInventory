@@ -206,6 +206,7 @@ page 50071 "MR Header"
                 ItemJournalLine."Document Line No." := MRLine."Line No.";
                 ItemJournalLine.Validate("Location Code", MRLine."Issuing Location");
                 ItemJournalLine.Validate(Quantity, MRLine.Quantity);
+                ItemJournalLine."Bin Code" := '';
                 ItemJournalLine.Validate("Shortcut Dimension 1 Code",Rec."Shortcut Dimension 1 Code");
                 ItemJournalLine.Modify();
             until MRLine.Next() = 0;
