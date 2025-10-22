@@ -1,7 +1,6 @@
 report 50075 GatePassReportv2
 {
     DefaultLayout = RDLC;
-    //RDLCLayout = './src/Reports/Layouts/GatePassReport_v1.rdl';
     RDLCLayout = './src/Reports/Layouts/GatePassReportReturn.rdl';
     Caption = 'Gate Pass (Return)';
     ApplicationArea = Suite;
