@@ -37,6 +37,14 @@ table 50071 "MR Header"
             Caption = 'Item Journal Created';
             Editable = false;
         }
+        field(7; "Remarks"; Text[100])
+        {
+            Caption = 'Remarks';
+            trigger OnValidate()
+            begin
+                TestField(Status,Status::Pending);
+            end;
+        }
     }
     keys
     {

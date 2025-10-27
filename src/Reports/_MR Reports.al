@@ -27,6 +27,7 @@ report 50071 "Material Requisition Report"
             column(RequestedByFullName; RequestedByFullName) { }
             column(Department; MRHeader."Shortcut Dimension 1 Code") { }
             column(Status; Format(MRHeader.Status)) { }
+            column(Remarks; MRHeader.Remarks) { }
             dataitem(MRLine; "MR Line")
             {
                 DataItemLink = "MR No." = field("MR No.");

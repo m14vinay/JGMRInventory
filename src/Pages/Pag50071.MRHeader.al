@@ -29,6 +29,11 @@ page 50071 "MR Header"
                 {
                     ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.', Comment = '%';
                 }
+                 field(Remarks; Rec.Remarks)
+                {
+                    ToolTip = 'Specifies the value of the Remarks field.', Comment = '%';
+                    MultiLine = true;
+                }
                 field(Status; Rec.Status)
                 {
                     ToolTip = 'Specifies the value of the Status field.', Comment = '%';
