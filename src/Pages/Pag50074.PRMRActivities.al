@@ -4,7 +4,7 @@ page 50074 "PR MR Activities"
     PageType = CardPart;
     SourceTable = "PR MR Cue";
     RefreshOnActivate = true;
-    ShowFilter = false;
+    
     layout
     {
         area(Content)
