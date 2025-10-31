@@ -28,6 +28,12 @@
       "name": "ADY MY eInvoice",
       "version": "22.0.0.133",
       "publisher": "Adynamics Solutions Sdn Bhd"
+    },
+    {
+      "id": "6b9b3057-27a4-4846-8674-41034a18509d",
+      "name": "QC",
+      "version": "1.0.0.0",
+      "publisher": "Comm-IT"
     }
     
   ],
