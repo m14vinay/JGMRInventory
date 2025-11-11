@@ -8,7 +8,10 @@ pageextension 50089 "Purchase Agent Activites Ext" extends "Purchasing Agent Rol
             {
                 ApplicationArea = Suite;
             }
-
+              part(PCActivities;"Price Comparison Activities")
+            {
+                ApplicationArea = Suite;
+            }
         }
         
        

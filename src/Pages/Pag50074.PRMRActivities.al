@@ -9,31 +9,7 @@ page 50074 "PR MR Activities"
     {
         area(Content)
         {
-             cuegroup("Price Comparisons")
-            {
-                Caption = 'Price Comparison';
-                field("Price Comparison Open"; Rec."Price Comparison Open")
-                {
-                    ApplicationArea = All;
-                    DrillDownPageID = "Price Comparison List";
-                    Caption = 'Open PC';
-                    ToolTip = 'Specifies the number of Price Comparison records that are Open on the Role Center.';
-                }
-                field("PC Pending Approval"; Rec."PC Pending Approval")
-                {
-                    ApplicationArea = All;
-                    DrillDownPageID = "Price Comparison List";
-                    Caption = 'Pending Approval PC';
-                    ToolTip = 'Specifies the number of Price Comparison records that are Pending Approval on the Role Center.';
-                }
-                field("Price Comparison Approved"; Rec."Price Comparison Approved")
-                {
-                    ApplicationArea = All;
-                    DrillDownPageID = "Price Comparison List";
-                    Caption = 'Approved PC';
-                    ToolTip = 'Specifies the number of Price Comparison records that are Approved on the Role Center.';
-                }
-            }
+             
             cuegroup("Purchase Requests")
             {
                 Caption = 'Purchase Requests';
