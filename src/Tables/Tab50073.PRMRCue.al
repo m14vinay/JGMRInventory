@@ -22,7 +22,7 @@ table 50073 "PR MR Cue"
             FieldClass = FlowField;
             Caption = 'Price Comparison Approved';
             Editable = false;
-            CalcFormula = count("Price Comparison Header" where("Status" = filter(Released)));
+            CalcFormula = count("Price Comparison Header" where("Status" = filter(Released),"PO Created" = const(false)));
         }
         field(4; "PC Pending Approval"; Integer)
         {
@@ -43,7 +43,7 @@ table 50073 "PR MR Cue"
             FieldClass = FlowField;
             Caption = 'Purchase Request Approved';
             Editable = false;
-            CalcFormula = count("Purchase Request Header" where("Status" = filter(Released)));
+            CalcFormula = count("Purchase Request Header" where("Status" = filter(Released),"PO Created" = const(false)));
         }
         field(7; "PR Pending Approval"; Integer)
         {
