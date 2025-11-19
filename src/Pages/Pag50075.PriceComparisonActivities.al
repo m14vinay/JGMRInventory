@@ -34,6 +34,13 @@ page 50075 "Price Comparison Activities"
                     Caption = 'Approved PC';
                     ToolTip = 'Specifies the number of Price Comaprison records that are Approved on the Role Center.';
                 }
+                 field("Price Comparison Processed"; Rec."Price Comparison Processed")
+                {
+                    ApplicationArea = All;
+                    DrillDownPageID = "Price Comparison List";
+                    Caption = 'Processed PC';
+                    ToolTip = 'Specifies the number of Price Comaprison records that are Processed on the Role Center.';
+                }
             }
         }
     }

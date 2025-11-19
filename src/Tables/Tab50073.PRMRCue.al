@@ -31,6 +31,13 @@ table 50073 "PR MR Cue"
             Editable = false;
             CalcFormula = count("Price Comparison Header" where("Status" = filter("Pending Approval")));
         }
+         field(24; "Price Comparison Processed"; Integer)
+        {
+            FieldClass = FlowField;
+            Caption = 'Price Comparison Processed';
+            Editable = false;
+            CalcFormula = count("Price Comparison Header" where("Status" = filter(Released),"PO Created" = const(True)));
+        }
         field(5; "Purchase Request Open"; Integer)
         {
             FieldClass = FlowField;
@@ -89,6 +96,13 @@ table 50073 "PR MR Cue"
         {
             Caption = 'User ID Filter';
             FieldClass = FlowFilter;
+        }
+           field(23; "Purchase Request Processed"; Integer)
+        {
+            FieldClass = FlowField;
+            Caption = 'Purchase Request Processed';
+            Editable = false;
+            CalcFormula = count("Purchase Request Header" where("Status" = filter(Released),"PO Created" = const(True)));
         }
     }
     keys

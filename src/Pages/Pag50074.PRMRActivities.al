@@ -34,6 +34,13 @@ page 50074 "PR MR Activities"
                     Caption = 'Approved PR';
                     ToolTip = 'Specifies the number of Purchase Request records that are Approved on the Role Center.';
                 }
+                 field("Purchase Request Processed"; Rec."Purchase Request Processed")
+                {
+                    ApplicationArea = All;
+                    DrillDownPageID = "Purchase Request List";
+                    Caption = 'Processed PR';
+                    ToolTip = 'Specifies the number of Purchase Request records that are Processed on the Role Center.';
+                }
             }
             cuegroup("Material Requisition")
             {
