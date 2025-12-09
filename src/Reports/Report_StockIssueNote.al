@@ -139,6 +139,7 @@ report 50073 StockIssueNote
                     if LocationRec.Get("Transfer-to Code") then
                         TransferToDescription := LocationRec.Name;
                     TransferReceiptLine.SetRange("Transfer Order No.", "Transfer Order No.");
+                    TransferReceiptLine.SetRange("Item No.", "Item No.");
                     if (TransferReceiptLine.FindSet()) then begin
                         repeat
                             ReceivedQty += TransferReceiptLine.Quantity;
@@ -146,7 +147,7 @@ report 50073 StockIssueNote
                     end;
                     TransferLine.Reset();
                     TransferLine.SetRange("Document No.", "Transfer Order No.");
-                    TransferLine.SetRange("Line No.", "Trans. Order Line No.");
+                    TransferLine.SetRange("Item No.", "Item No.");
                     if (TransferLine.FindSet()) then begin
                         repeat
                             RequestedQty += TransferLine."Outstanding Quantity";
@@ -159,6 +160,7 @@ report 50073 StockIssueNote
                         repeat
                             TransferShipmentLine.Reset();
                             TransferShipmentLine.SetRange("Document No.", TransferShipmentHeader."No.");
+                            TransferShipmentLine.SetRange("Item No.", "Item No.");
                             if TransferShipmentLine.FindSet() then
                                 repeat
                                     RequestedQty += TransferShipmentLine."Quantity";
@@ -172,6 +174,7 @@ report 50073 StockIssueNote
                         repeat
                             TransferShipmentLine.Reset();
                             TransferShipmentLine.SetRange("Document No.", TransferShipmentHeader."No.");
+                            TransferShipmentLine.SetRange("Item No.", "Item No.");
                             if TransferShipmentLine.FindSet() then
                                 repeat
                                     Quantity += TransferShipmentLine."Quantity";
