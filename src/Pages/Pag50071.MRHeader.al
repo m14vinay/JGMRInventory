@@ -29,6 +29,10 @@ page 50071 "MR Header"
                 {
                     ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.', Comment = '%';
                 }
+                 field("Assigned To"; Rec."Assigned To")
+                {
+                    ToolTip = 'Specifies the value of the Assigned To field.', Comment = '%';
+                }
                  field(Remarks; Rec.Remarks)
                 {
                     ToolTip = 'Specifies the value of the Remarks field.', Comment = '%';

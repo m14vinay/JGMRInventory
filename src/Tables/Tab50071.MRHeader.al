@@ -45,6 +45,12 @@ table 50071 "MR Header"
                 TestField(Status,Status::Pending);
             end;
         }
+         field(8; "Assigned To"; Code[50])
+        {
+            Caption = 'Employee Assigned';
+            TableRelation = Employee."First Name";
+            ValidateTableRelation = false;
+        }
     }
     keys
     {

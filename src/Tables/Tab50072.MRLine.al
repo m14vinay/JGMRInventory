@@ -48,8 +48,7 @@ table 50072 "MR Line"
         field(6; "Unit of Measure Code"; Code[10])
         {
             Caption = 'Unit of Measure Code';
-            TableRelation = "Unit of Measure";
-            Editable = false;
+            TableRelation = "Item Unit of Measure".Code where("Item No." = field("Item No."));
         }
         field(7; "Need Date"; Date)
         {
