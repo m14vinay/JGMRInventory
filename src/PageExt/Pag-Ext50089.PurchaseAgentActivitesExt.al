@@ -12,6 +12,10 @@ pageextension 50089 "Purchase Agent Activites Ext" extends "Purchasing Agent Rol
             {
                 ApplicationArea = Suite;
             }
+             part(DocumentApprovals; "Document Aprovals")
+            {
+                ApplicationArea = Suite;
+            }
 
         }
         addlast(rolecenter)
@@ -21,7 +25,5 @@ pageextension 50089 "Purchase Agent Activites Ext" extends "Purchasing Agent Rol
                 ApplicationArea = Basic, Suite;
             }
         }
-
-
     }
 }

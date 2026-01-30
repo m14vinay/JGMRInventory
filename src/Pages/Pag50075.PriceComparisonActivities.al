@@ -8,8 +8,7 @@ page 50075 "Price Comparison Activities"
     layout
     {
         area(Content)
-        {
-             
+        { 
             cuegroup("Price Comparison")
             {
                 Caption = 'Price Comparison';

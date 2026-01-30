@@ -104,6 +104,24 @@ table 50073 "PR MR Cue"
             Editable = false;
             CalcFormula = count("Purchase Request Header" where("Status" = filter(Released),"PO Created" = const(True)));
         }
+         field(25; "POs Pending Approval"; Integer)
+        {
+            CalcFormula = count("Purchase Header" where("Document Type" = const(Order),
+                                                        Status = filter("Pending Approval")));
+            Caption = 'POs Pending Approval';
+            Editable = false;
+            FieldClass = FlowField;
+            ToolTip = 'Specifies the number of purchase orders that are pending approval.';
+        }
+        field(26; "Approved Purchase Orders"; Integer)
+        {
+            CalcFormula = count("Purchase Header" where("Document Type" = const(Order),
+                                                        Status = filter(Released | "Pending Prepayment")));
+            Caption = 'Approved Purchase Orders';
+            Editable = false;
+            FieldClass = FlowField;
+            ToolTip = 'Specifies the number of purchase orders that are approved.';
+        }
     }
     keys
     {

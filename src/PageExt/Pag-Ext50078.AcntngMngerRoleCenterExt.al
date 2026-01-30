@@ -13,6 +13,13 @@ pageextension 50078 "Acntng Mnger RoleCenter Ext" extends "Accounting Manager Ro
                 ApplicationArea = Suite;
             }
         }
+         addlast(rolecenter)
+        {
+            part(PowerBIEmbeddedReportPart; "Power BI Embedded Report Part")
+            {
+                ApplicationArea = Basic, Suite;
+            }
+        }
     }
     actions
     {

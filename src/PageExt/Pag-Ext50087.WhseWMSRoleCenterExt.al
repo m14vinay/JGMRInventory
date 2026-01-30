@@ -9,5 +9,12 @@ pageextension 50087 "Whse. WMS Role Center Ext" extends "Whse. WMS Role Center"
                 ApplicationArea = Suite;
             }
         }
+        addlast(rolecenter)
+        {
+            part(PowerBIEmbeddedReportPart; "Power BI Embedded Report Part")
+            {
+                ApplicationArea = Basic, Suite;
+            }
+        }
     }
 }
