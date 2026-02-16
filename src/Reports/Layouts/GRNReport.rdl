@@ -11,7 +11,7 @@
       <am:Name>MSRB</am:Name>
       <am:Version>15.1.30001.02</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2026-02-16T04:02:40.2410108Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2026-02-16T07:07:42.9645719Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -32,12 +32,12 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>30.3558cm</Width>
+                  <Width>28.43308cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>1.39238cm</Height>
+                  <Height>1.55141cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -47,42 +47,48 @@
                               <TablixBody>
                                 <TablixColumns>
                                   <TablixColumn>
-                                    <Width>2.03839cm</Width>
+                                    <Width>2.13913cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>1.523cm</Width>
+                                    <Width>1.34698cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>4.11623cm</Width>
+                                    <Width>2.84623cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>2.95483cm</Width>
+                                    <Width>3.56311cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>2.67351cm</Width>
+                                    <Width>2.69455cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>2.78179cm</Width>
+                                    <Width>2.10133cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>2.50131cm</Width>
+                                    <Width>1.66887cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>2.18937cm</Width>
+                                    <Width>1.98302cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>2cm</Width>
+                                    <Width>1.85889cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>3.92264cm</Width>
+                                    <Width>1.98847cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>3.09972cm</Width>
+                                    <Width>1.84736cm</Width>
+                                  </TablixColumn>
+                                  <TablixColumn>
+                                    <Width>2.13838cm</Width>
+                                  </TablixColumn>
+                                  <TablixColumn>
+                                    <Width>1.90028cm</Width>
                                   </TablixColumn>
                                 </TablixColumns>
                                 <TablixRows>
                                   <TablixRow>
-                                    <Height>0.61139cm</Height>
+                                    <Height>0.77042cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -96,7 +102,7 @@
                                                   <TextRun>
                                                     <Value>Receipt No.</Value>
                                                     <Style>
-                                                      <FontFamily>Cambria</FontFamily>
+                                                      <FontSize>9pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
                                                     </Style>
                                                   </TextRun>
@@ -142,7 +148,7 @@
                                                   <TextRun>
                                                     <Value>Date</Value>
                                                     <Style>
-                                                      <FontFamily>Cambria</FontFamily>
+                                                      <FontSize>9pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
                                                     </Style>
                                                   </TextRun>
@@ -193,7 +199,7 @@
                                                   <TextRun>
                                                     <Value>Suppier/Customer Code</Value>
                                                     <Style>
-                                                      <FontFamily>Cambria</FontFamily>
+                                                      <FontSize>9pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
                                                     </Style>
                                                   </TextRun>
@@ -244,7 +250,7 @@
                                                   <TextRun>
                                                     <Value>Name</Value>
                                                     <Style>
-                                                      <FontFamily>Cambria</FontFamily>
+                                                      <FontSize>9pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
                                                     </Style>
                                                   </TextRun>
@@ -295,7 +301,7 @@
                                                   <TextRun>
                                                     <Value>Reference Doc.</Value>
                                                     <Style>
-                                                      <FontFamily>Cambria</FontFamily>
+                                                      <FontSize>9pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
                                                     </Style>
                                                   </TextRun>
@@ -346,7 +352,7 @@
                                                   <TextRun>
                                                     <Value>Ref Doc No.</Value>
                                                     <Style>
-                                                      <FontFamily>Cambria</FontFamily>
+                                                      <FontSize>9pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
                                                     </Style>
                                                   </TextRun>
@@ -392,7 +398,7 @@
                                                   <TextRun>
                                                     <Value>Tran Currency</Value>
                                                     <Style>
-                                                      <FontFamily>Cambria</FontFamily>
+                                                      <FontSize>9pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
                                                     </Style>
                                                   </TextRun>
@@ -438,7 +444,7 @@
                                                   <TextRun>
                                                     <Value>Basic Value</Value>
                                                     <Style>
-                                                      <FontFamily>Cambria</FontFamily>
+                                                      <FontSize>9pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
                                                     </Style>
                                                   </TextRun>
@@ -484,7 +490,99 @@
                                                   <TextRun>
                                                     <Value>Total Value</Value>
                                                     <Style>
-                                                      <FontFamily>Cambria</FontFamily>
+                                                      <FontSize>9pt</FontSize>
+                                                      <FontWeight>Bold</FontWeight>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <Style>
+                                              <Border>
+                                                <Style>Solid</Style>
+                                              </Border>
+                                              <TopBorder>
+                                                <Color>Black</Color>
+                                                <Width>1pt</Width>
+                                              </TopBorder>
+                                              <BottomBorder>
+                                                <Style>None</Style>
+                                              </BottomBorder>
+                                              <LeftBorder>
+                                                <Color>Black</Color>
+                                                <Width>1pt</Width>
+                                              </LeftBorder>
+                                              <RightBorder>
+                                                <Color>Black</Color>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
+                                              <VerticalAlign>Top</VerticalAlign>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox14">
+                                            <rd:DefaultName>Textbox14</rd:DefaultName>
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>Basic Value (Base)</Value>
+                                                    <Style>
+                                                      <FontSize>9pt</FontSize>
+                                                      <FontWeight>Bold</FontWeight>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <Style>
+                                              <Border>
+                                                <Style>Solid</Style>
+                                              </Border>
+                                              <TopBorder>
+                                                <Color>Black</Color>
+                                                <Width>1pt</Width>
+                                              </TopBorder>
+                                              <BottomBorder>
+                                                <Style>None</Style>
+                                              </BottomBorder>
+                                              <LeftBorder>
+                                                <Color>Black</Color>
+                                                <Width>1pt</Width>
+                                              </LeftBorder>
+                                              <RightBorder>
+                                                <Color>Black</Color>
+                                                <Width>1pt</Width>
+                                              </RightBorder>
+                                              <VerticalAlign>Top</VerticalAlign>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox12">
+                                            <rd:DefaultName>Textbox12</rd:DefaultName>
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>Total Value (Base)</Value>
+                                                    <Style>
+                                                      <FontSize>9pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
                                                     </Style>
                                                   </TextRun>
@@ -530,7 +628,7 @@
                                                   <TextRun>
                                                     <Value>Supplier Do Number.</Value>
                                                     <Style>
-                                                      <FontFamily>Cambria</FontFamily>
+                                                      <FontSize>9pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
                                                     </Style>
                                                   </TextRun>
@@ -576,7 +674,7 @@
                                                   <TextRun>
                                                     <Value>Supplier Do Date</Value>
                                                     <Style>
-                                                      <FontFamily>Cambria</FontFamily>
+                                                      <FontSize>9pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
                                                     </Style>
                                                   </TextRun>
@@ -628,6 +726,7 @@
                                                     <Value>=Fields!No.Value</Value>
                                                     <Style>
                                                       <FontFamily>Cambria</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -681,7 +780,7 @@
                                                   <TextRun>
                                                     <Value>=Fields!PostingDate.Value</Value>
                                                     <Style>
-                                                      <FontFamily>Cambria</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                       <Format>d</Format>
                                                     </Style>
                                                   </TextRun>
@@ -716,7 +815,7 @@
                                                   <TextRun>
                                                     <Value>=Fields!Pay_to_Vendor_No_.Value</Value>
                                                     <Style>
-                                                      <FontFamily>Cambria</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -770,7 +869,7 @@
                                                   <TextRun>
                                                     <Value>=Fields!Pay_to_Name.Value</Value>
                                                     <Style>
-                                                      <FontFamily>Cambria</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -824,7 +923,7 @@
                                                   <TextRun>
                                                     <Value>=Fields!PurchaseOrder.Value</Value>
                                                     <Style>
-                                                      <FontFamily>Cambria</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -878,7 +977,7 @@
                                                   <TextRun>
                                                     <Value>=Fields!Order_No_.Value</Value>
                                                     <Style>
-                                                      <FontFamily>Cambria</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -922,7 +1021,6 @@
                                       </TablixCell>
                                       <TablixCell>
                                         <CellContents>
-                                          <rd:Selected>true</rd:Selected>
                                           <Textbox Name="Currency_Code">
                                             <rd:DefaultName>Currency_Code</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
@@ -936,7 +1034,7 @@
      "MYR", 
      Fields!Currency_Code.Value)</Value>
                                                     <Style>
-                                                      <FontFamily>Cambria</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                       <Format>#,0.00;(#,0.00)</Format>
                                                     </Style>
                                                   </TextRun>
@@ -971,7 +1069,7 @@
                                                   <TextRun>
                                                     <Value>=Fields!Amount.Value</Value>
                                                     <Style>
-                                                      <FontFamily>Cambria</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                       <Format>#,0.00;(#,0.00)</Format>
                                                     </Style>
                                                   </TextRun>
@@ -1006,7 +1104,77 @@
                                                   <TextRun>
                                                     <Value>=Fields!Amount_Including_VAT.Value</Value>
                                                     <Style>
-                                                      <FontFamily>Cambria</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                      <Format>#,0.00;(#,0.00)</Format>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <Style>
+                                              <Border>
+                                                <Style>Solid</Style>
+                                              </Border>
+                                              <VerticalAlign>Middle</VerticalAlign>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="BaseValueBase">
+                                            <rd:DefaultName>BaseValueBase</rd:DefaultName>
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=Fields!BaseValueBase.Value</Value>
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                      <Format>#,0.00;(#,0.00)</Format>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <Style>
+                                              <Border>
+                                                <Style>Solid</Style>
+                                              </Border>
+                                              <VerticalAlign>Middle</VerticalAlign>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="TotalValueBase">
+                                            <rd:DefaultName>TotalValueBase</rd:DefaultName>
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=Fields!TotalValueBase.Value</Value>
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
                                                       <Format>#,0.00;(#,0.00)</Format>
                                                     </Style>
                                                   </TextRun>
@@ -1041,7 +1209,7 @@
                                                   <TextRun>
                                                     <Value>=Fields!Vendor_Shipment_No_.Value</Value>
                                                     <Style>
-                                                      <FontFamily>Cambria</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -1075,7 +1243,7 @@
                                                   <TextRun>
                                                     <Value>=Fields!Vendor_DO_Date.Value</Value>
                                                     <Style>
-                                                      <FontFamily>Cambria</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                       <Format>d</Format>
                                                     </Style>
                                                   </TextRun>
@@ -1115,6 +1283,8 @@
                                   <TablixMember />
                                   <TablixMember />
                                   <TablixMember />
+                                  <TablixMember />
+                                  <TablixMember />
                                 </TablixMembers>
                               </TablixColumnHierarchy>
                               <TablixRowHierarchy>
@@ -1124,17 +1294,14 @@
                                   </TablixMember>
                                   <TablixMember>
                                     <Group Name="Details" />
-                                    <Visibility>
-                                      <Hidden>=if(Fields!ItemCode.Value="",True,False)</Hidden>
-                                    </Visibility>
                                   </TablixMember>
                                 </TablixMembers>
                               </TablixRowHierarchy>
                               <DataSetName>DataSet_Result</DataSetName>
                               <Top>0.18099cm</Top>
                               <Left>0.35648cm</Left>
-                              <Height>1.21139cm</Height>
-                              <Width>29.80079cm</Width>
+                              <Height>1.37042cm</Height>
+                              <Width>28.0766cm</Width>
                               <Style>
                                 <Border>
                                   <Style>Solid</Style>
@@ -1189,15 +1356,15 @@
               <BreakLocation>End</BreakLocation>
             </PageBreak>
             <Left>0.00001cm</Left>
-            <Height>1.39238cm</Height>
-            <Width>30.3558cm</Width>
+            <Height>1.55141cm</Height>
+            <Width>28.43308cm</Width>
             <Style />
           </Tablix>
         </ReportItems>
         <Height>1.55141cm</Height>
         <Style />
       </Body>
-      <Width>30.35581cm</Width>
+      <Width>28.56978cm</Width>
       <Page>
         <PageHeader>
           <Height>3.98146cm</Height>
@@ -1214,7 +1381,6 @@
                     <TextRun>
                       <Value>GOODS RECEIPT NOTE</Value>
                       <Style>
-                        <FontFamily>Cambria</FontFamily>
                         <FontSize>12pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
@@ -1226,7 +1392,7 @@
                 </Paragraph>
               </Paragraphs>
               <Top>1.74526cm</Top>
-              <Left>23.86917cm</Left>
+              <Left>22.28167cm</Left>
               <Height>0.73367cm</Height>
               <Width>6.28811cm</Width>
               <Style>
@@ -1242,10 +1408,9 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=First(Fields!PrintName.Value, "DataSet_Result")</Value>
+                      <Value>=First(Fields!PrintName.Value, "DataSet_Result") &amp; "  (" &amp; First(Fields!CompanyInfoBusinessRegistrationNo.Value, "DataSet_Result")  &amp;  ")"</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Cambria</FontFamily>
                         <FontSize>11pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
@@ -1258,7 +1423,7 @@
               </Paragraphs>
               <Left>1.62214cm</Left>
               <Height>24.63046pt</Height>
-              <Width>9.804cm</Width>
+              <Width>12.00886cm</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>
@@ -1276,7 +1441,6 @@
                       <Value>=First(Fields!CompanyAddress.Value, "DataSet_Result") + ",  " + First(Fields!CompanyPostcode.Value, "DataSet_Result") + ",  " + First(Fields!CompanyCity.Value, "DataSet_Result") + ",  " + First(Fields!CompanyState.Value, "DataSet_Result") + ", " + First(Fields!CompanyCountry.Value, "DataSet_Result")</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Cambria</FontFamily>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -1288,7 +1452,7 @@
               <Top>0.85434cm</Top>
               <Left>0.35649cm</Left>
               <Height>20.9688pt</Height>
-              <Width>11.07781cm</Width>
+              <Width>13.27451cm</Width>
               <ZIndex>2</ZIndex>
               <Style>
                 <Border>
@@ -1306,7 +1470,6 @@
                       <Value>=First(Fields!CompanyInfoPhoneNo.Value, "DataSet_Result")</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Cambria</FontFamily>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -1318,7 +1481,7 @@
               <Top>1.77046cm</Top>
               <Left>2.90578cm</Left>
               <Height>14.5pt</Height>
-              <Width>8.53668cm</Width>
+              <Width>10.72522cm</Width>
               <ZIndex>3</ZIndex>
               <Style>
                 <Border>
@@ -1336,7 +1499,6 @@
                       <Value>=First(Fields!CompanyInfoFax.Value, "DataSet_Result")</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Cambria</FontFamily>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -1348,7 +1510,7 @@
               <Top>2.28199cm</Top>
               <Left>2.90578cm</Left>
               <Height>15.50013pt</Height>
-              <Width>8.53668cm</Width>
+              <Width>10.72522cm</Width>
               <ZIndex>4</ZIndex>
               <Style>
                 <Border>
@@ -1367,7 +1529,6 @@
                       <Value>=First(Fields!CompanyInfoEmail.Value, "DataSet_Result") + "     " + "URL :  " + First(Fields!CompanyInfoHomePage.Value, "DataSet_Result")</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Cambria</FontFamily>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -1379,7 +1540,7 @@
               <Top>2.8288cm</Top>
               <Left>2.90578cm</Left>
               <Height>14.49978pt</Height>
-              <Width>8.53668cm</Width>
+              <Width>10.72522cm</Width>
               <ZIndex>5</ZIndex>
               <Style>
                 <Border>
@@ -1397,7 +1558,6 @@
                       <Value>=First(Fields!CompanyInfoVATRegNo.Value, "DataSet_Result")</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Cambria</FontFamily>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -1409,7 +1569,7 @@
               <Top>3.34032cm</Top>
               <Left>2.90578cm</Left>
               <Height>14.5pt</Height>
-              <Width>8.53668cm</Width>
+              <Width>10.72522cm</Width>
               <ZIndex>6</ZIndex>
               <Style>
                 <Border>
@@ -1427,7 +1587,6 @@
                       <Value>Tel No</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Cambria</FontFamily>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -1457,7 +1616,6 @@
                       <Value>Fax No</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Cambria</FontFamily>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -1487,7 +1645,6 @@
                       <Value>Email </Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Cambria</FontFamily>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -1517,7 +1674,6 @@
                       <Value>SST Number</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Cambria</FontFamily>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -1658,46 +1814,15 @@
                 <VerticalAlign>Middle</VerticalAlign>
               </Style>
             </Textbox>
-            <Textbox Name="lbltelno2">
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>="(" + First(Fields!CompanyInfoBusinessRegistrationNo.Value, "DataSet_Result") + ")"</Value>
-                      <Style>
-                        <FontStyle>Normal</FontStyle>
-                        <FontFamily>Cambria</FontFamily>
-                        <FontSize>11pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Left</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <Left>7.29228cm</Left>
-              <Height>24.63014pt</Height>
-              <Width>3.8819cm</Width>
-              <ZIndex>15</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <VerticalAlign>Middle</VerticalAlign>
-              </Style>
-            </Textbox>
             <Image Name="Picture1">
               <Source>Database</Source>
               <Value>=First(Fields!CompanyPicture1.Value, "DataSet_Result")</Value>
               <MIMEType>image/jpeg</MIMEType>
               <Sizing>Fit</Sizing>
-              <Left>23.86917cm</Left>
+              <Left>22.28167cm</Left>
               <Height>1.759cm</Height>
               <Width>2.04352cm</Width>
-              <ZIndex>16</ZIndex>
+              <ZIndex>15</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -1709,10 +1834,10 @@
               <Value>=First(Fields!CompanyPicture2.Value, "DataSet_Result")</Value>
               <MIMEType>image/jpeg</MIMEType>
               <Sizing>Fit</Sizing>
-              <Left>25.9127cm</Left>
+              <Left>24.3252cm</Left>
               <Height>1.759cm</Height>
               <Width>2.22356cm</Width>
-              <ZIndex>17</ZIndex>
+              <ZIndex>16</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -1724,10 +1849,10 @@
               <Value>=First(Fields!CompanyPicture3.Value, "DataSet_Result")</Value>
               <MIMEType>image/jpeg</MIMEType>
               <Sizing>Fit</Sizing>
-              <Left>28.13626cm</Left>
+              <Left>26.54876cm</Left>
               <Height>1.759cm</Height>
               <Width>2.02102cm</Width>
-              <ZIndex>18</ZIndex>
+              <ZIndex>17</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -1742,7 +1867,7 @@
               <Left>0.35649cm</Left>
               <Height>0.86891cm</Height>
               <Width>1.26565cm</Width>
-              <ZIndex>19</ZIndex>
+              <ZIndex>18</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -1974,6 +2099,18 @@ ohhNZOMp2UrqoTkcOfwTbdukMGnSBG697Q7sNttxtvIJHQ+333oTz/Xsdn5Z1OWU8zeZMWsOb703jJ5P
         </Field>
         <Field Name="AmountFormat">
           <DataField>AmountFormat</DataField>
+        </Field>
+        <Field Name="BaseValueBase">
+          <DataField>BaseValueBase</DataField>
+        </Field>
+        <Field Name="BaseValueBaseFormat">
+          <DataField>BaseValueBaseFormat</DataField>
+        </Field>
+        <Field Name="TotalValueBase">
+          <DataField>TotalValueBase</DataField>
+        </Field>
+        <Field Name="TotalValueBaseFormat">
+          <DataField>TotalValueBaseFormat</DataField>
         </Field>
       </Fields>
       <Query>

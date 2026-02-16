@@ -2,7 +2,7 @@ report 50079 GRNReport
 {
     DefaultLayout = RDLC;
     RDLCLayout = './src/Reports/Layouts/GRNReport.rdl';
-    Caption = 'Goods Receipt Note';
+    Caption = 'Goods Receipt Note Summary List';
     ApplicationArea = Suite;
     UsageCategory = Documents;
     WordMergeDataItem = "Purchase Receipt Header";
@@ -108,6 +108,25 @@ report 50079 GRNReport
                 column(Amount; Amount)
                 {
                 }
+                column(BaseValueBase; BaseValueBase)
+                {
+
+                }
+                column(TotalValueBase; TotalValueBase)
+                {
+
+                }
+                trigger OnAfterGetRecord()
+                begin
+                    if "Currency Factor" <> 0 then begin
+                        BaseValueBase := Amount / "Currency Factor";
+                        TotalValueBase := "Amount Including VAT" / "Currency Factor";
+                    end
+                    else begin
+                        BaseValueBase := 0;
+                        TotalValueBase := 0;
+                    end;
+                end;
             }
             trigger OnPreDataItem()
             var
@@ -143,4 +162,6 @@ report 50079 GRNReport
         FormatAddr: Codeunit "Format Address";
         ReportTitle: Text[30];
         CompanyAddr: array[8] of Text[100];
+        BaseValueBase: Decimal;
+        TotalValueBase: Decimal;
 }
