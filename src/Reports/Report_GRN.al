@@ -123,8 +123,8 @@ report 50079 GRNReport
                         TotalValueBase := "Amount Including VAT" / "Currency Factor";
                     end
                     else begin
-                        BaseValueBase := 0;
-                        TotalValueBase := 0;
+                        BaseValueBase := Amount;
+                        TotalValueBase := "Amount Including VAT";
                     end;
                 end;
             }
