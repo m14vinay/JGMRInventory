@@ -9,5 +9,12 @@ pageextension 50088 "Shop Supervisor Role Center Ex" extends "Shop Supervisor Ro
                 ApplicationArea = Suite;
             }
         }
+         addlast(rolecenter)
+        {
+            part(PowerBIEmbeddedReportPart; "Power BI Embedded Report Part")
+            {
+                ApplicationArea = Basic, Suite;
+            }
+        }
     }
 }
