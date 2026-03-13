@@ -50,7 +50,7 @@ table 50073 "PR MR Cue"
             FieldClass = FlowField;
             Caption = 'Purchase Request Approved';
             Editable = false;
-            CalcFormula = count("Purchase Request Header" where("Status" = filter(Released),"PO Created" = const(false)));
+            CalcFormula = count("Purchase Request Header" where("Status" = filter(Released),"PO Created" = CONST(false)));
         }
         field(7; "PR Pending Approval"; Integer)
         {
@@ -102,7 +102,7 @@ table 50073 "PR MR Cue"
             FieldClass = FlowField;
             Caption = 'Purchase Request Processed';
             Editable = false;
-            CalcFormula = count("Purchase Request Header" where("Status" = filter(Released),"PO Created" = const(True)));
+            CalcFormula = count("Purchase Request Header" where("Status" = filter(Released),"PO Created" = const(True),"PO Created Partially" = const(false)));
         }
          field(25; "POs Pending Approval"; Integer)
         {

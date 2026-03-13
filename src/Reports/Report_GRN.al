@@ -95,6 +95,21 @@ report 50079 GRNReport
             column(Vendor_DO_Date; Format("Vendor DO Date"))
             {
             }
+            column(RcptQuantity; RcptQuantity)
+            {
+            }
+             column(InvoiceAmount; InvoiceAmount)
+            {
+            }
+             column(InvoiceAmountLCY; InvoiceAmountLCY)
+            {
+            }
+             column(InvoiceAmntInclVATLCY; InvoiceAmntInclVATLCY)
+            {
+            }
+             column(InvoiceAmntInclVAT; InvoiceAmntInclVAT)
+            {
+            }
             dataitem("Purchase Header"; "Purchase Header")
             {
                 DataItemLink = "No." = field("Order No.");
@@ -144,6 +159,43 @@ report 50079 GRNReport
                 end;
                 GLSetup.Get();
             end;
+
+            trigger OnAfterGetRecord()
+            begin
+                Clear(RcptQuantity);
+                Clear(InvoiceAmount);
+                Clear(InvoiceAmntInclVAT);
+                Clear(InvoiceAmountLCY);
+                Clear(InvoiceAmntInclVATLCY);
+                PurchReceptLine.Reset();
+                PurchReceptLine.SetRange("Document No.", "No.");
+                If PurchReceptLine.FindSet() then
+                    repeat
+                        RcptQuantity += PurchReceptLine.Quantity;
+                    until PurchReceptLine.Next() = 0;
+
+                PurchInvoiceLine.Reset();
+                PurchInvoiceLine.SetRange("Receipt No.", "No.");
+                If PurchInvoiceLine.FindSet() then
+                    repeat
+                        PurchInvoiceHeader.Reset();
+                        PurchInvoiceHeader.SetRange("No.", PurchInvoiceLine."Document No.");
+                        PurchInvoiceHeader.SetFilter("Currency Factor", '<>%1', 0);
+                        If PurchInvoiceHeader.FindFirst() then begin
+                            InvoiceAmount += PurchInvoiceLine.Amount;
+                            InvoiceAmntInclVAT += PurchInvoiceLine."Amount Including VAT";
+                            If currency.Get(PurchInvoiceHeader."Currency Code") then
+                            InvoiceAmountLCY += Round(CurrencyExchangeRate.ExchangeAmtFCYToLCY(PurchInvoiceHeader."Posting Date",PurchInvoiceHeader."Currency Code", (PurchInvoiceLine."Amount"), PurchInvoiceHeader."Currency Factor"), currency."Amount Rounding Precision");
+                            InvoiceAmntInclVATLCY += Round(CurrencyExchangeRate.ExchangeAmtFCYToLCY(PurchInvoiceHeader."Posting Date", PurchInvoiceHeader."Currency Code", (PurchInvoiceLine."Amount Including VAT"), PurchInvoiceHeader."Currency Factor"), currency."Amount Rounding Precision");
+                        end else begin
+                            InvoiceAmount += PurchInvoiceLine.Amount;
+                            InvoiceAmntInclVAT += PurchInvoiceLine."Amount Including VAT";
+                            InvoiceAmountLCY += PurchInvoiceLine.Amount;
+                            InvoiceAmntInclVATLCY += PurchInvoiceLine."Amount Including VAT";
+                        end;
+                    until PurchInvoiceLine.Next() = 0;
+
+            end;
         }
     }
     trigger OnInitReport()
@@ -164,4 +216,15 @@ report 50079 GRNReport
         CompanyAddr: array[8] of Text[100];
         BaseValueBase: Decimal;
         TotalValueBase: Decimal;
+        RcptQuantity: Decimal;
+        PurchReceptLine: Record "Purch. Rcpt. Line";
+        PurchInvoiceLine: Record "Purch. Inv. Line";
+        PurchInvoiceHeader: Record "Purch. Inv. Header";
+        InvoiceAmount: Decimal;
+        InvoiceAmntInclVAT: Decimal;
+         InvoiceAmountLCY: Decimal;
+        InvoiceAmntInclVATLCY: Decimal;
+        CurrencyExchangeRate: Record "Currency Exchange Rate";
+        currency : Record Currency;
+
 }

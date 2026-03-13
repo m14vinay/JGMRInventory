@@ -13,6 +13,13 @@ pageextension 50079 "Account Receivables Ext " extends "Account Receivables"
                 ApplicationArea = Suite;
             }
         }
+        addlast(rolecenter)
+        {
+            part(PowerBIEmbeddedReportPart; "Power BI Embedded Report Part")
+            {
+                ApplicationArea = Basic, Suite;
+            }
+        }
     }
     actions
     {
