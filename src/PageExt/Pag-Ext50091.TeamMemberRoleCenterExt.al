@@ -9,5 +9,12 @@ pageextension 50091 "Team Member Role Center Ext" extends "Team Member Role Cent
                 ApplicationArea = Basic, Suite;
             }
         }
+         addbefore(ApprovalsActivities)
+        {
+            part(PRMRActivities; "PR MR Activities")
+            {
+                ApplicationArea = Suite;
+            }
+        }
     }
 }
