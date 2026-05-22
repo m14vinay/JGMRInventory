@@ -22,6 +22,10 @@ page 50078 "MR Lines"
                 {
                     ToolTip = 'Specifies the value of the Line No. field.', Comment = '%';
                 }
+                field("Shortcut Dimension 1 Code"; Rec."Shortcut Dimension 1 Code")
+                {
+                    ToolTip = 'Specifies the value of the Shortcut Dimension 1 Code field.', Comment = '%';
+                }
                 field("Item No."; Rec."Item No.")
                 {
                     ToolTip = 'Specifies the value of the Item No. field.', Comment = '%';
