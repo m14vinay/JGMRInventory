@@ -64,7 +64,7 @@ codeunit 50071 "MR Subscriber"
     begin
         If Item.Get(TransferLine."Item No.") then
             If PackSize.Get(Item."Pack Size") then
-                ItemJournalLine."Quantity Pieces" := TransferLine."Qty. to Ship" * PackSize."Qty Per Pack";
+                ItemJournalLine."Quantity Pieces" :=  PackSize."Qty Per Pack";
     end;
 
     [EventSubscriber(ObjectType::Codeunit, CodeUnit::"TransferOrder-Post Receipt", 'OnBeforePostItemJournalLine', '', false, false)]
@@ -75,7 +75,7 @@ codeunit 50071 "MR Subscriber"
     begin
         If Item.Get(TransferLine."Item No.") then
             If PackSize.Get(Item."Pack Size") then
-                ItemJournalLine."Quantity Pieces" := TransferLine."Qty. to Receive" * PackSize."Qty Per Pack";
+                ItemJournalLine."Quantity Pieces" :=  PackSize."Qty Per Pack";
     end;
 
     [EventSubscriber(ObjectType::Codeunit, CodeUnit::"TransferOrder-Post Transfer", 'OnAfterCreateItemJnlLine', '', false, false)]
